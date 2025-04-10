@@ -32,3 +32,22 @@ main {
 footer {
     margin-top: auto; /* Footer nach unten schieben */
 }
+
+nav {
+    background-color: #333; /* Dunkler Hintergrund */
+    padding: 10px; /* Innenabstand */
+    text-align: center; /* Zentriert die Links */
+}
+
+nav a {
+    color: white; /* Weiße Schriftfarbe */
+    text-decoration: none; /* Entfernt Unterstreichung */
+    margin: 0 15px; /* Abstand zwischen Links */
+    padding: 10px 15px; /* Klickbare Fläche vergrößern */
+    display: inline-block; /* Block-Layout für bessere Klickbarkeit */
+}
+
+nav a:hover {
+    background-color: #575757; /* Hintergrundfarbe beim Hover */
+    border-radius: 5px; /* Abgerundete Ecken beim Hover */
+}

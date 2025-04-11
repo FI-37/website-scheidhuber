@@ -52,3 +52,12 @@ nav a:hover {
     background-color: #575757; /* Hintergrundfarbe beim Hover */
     border-radius: 5px; /* Abgerundete Ecken beim Hover */
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form button {
+    margin: 0.5rem 14rem 0 0;
+    background-color: beige;
+}

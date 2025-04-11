@@ -3,4 +3,16 @@
 {% block content %}
 <h1>Kontakt</h1>
 <p>Wir freuen uns von Ihnen zu lesen.</p>
+<form action="send.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">E-Mail:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="message">Nachricht:</label>
+    <textarea id="message" name="message"></textarea>
+
+    <button type="submit">Absenden</button>
+</form>
 {% endblock %}

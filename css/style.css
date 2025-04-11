@@ -21,6 +21,16 @@ header, footer {
     padding: 1rem;
 }
 
+header {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
+
 main {
     flex: 1; /* Nimmt verfügbaren Platz ein */
     padding: 2rem;

@@ -1,5 +1,26 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-<h1>Todo - Liste</h1>
+    <h1>TODO Liste</h1>
+
+    <div id="error-message" style="color:red;"></div>
+
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Neue Aufgabe hinzufügen">
+        <button type="submit" class="add-button">Hinzufügen</button>
+    </form>
+
+    <ul id="todo-list" class="todo-list">
+        <!-- TODO items will be inserted here dynamically -->
+    </ul>
+
+    <form id="todo-update-form" style="display: none;">
+        <input type="hidden" id="todo-id">
+        <input type="text" id="todo-update-input">
+        <button type="submit" class="add-button">Update</button>
+    </form>
+{% endblock %}
+
+{% block javascript_includes %}
+    <script src="js/todo.js"></script>
 {% endblock %}
